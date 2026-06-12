@@ -81,18 +81,18 @@ file-encryption-tool/
 │   └── encryption_tool.sh
 │
 ├── docs/
-│   ├── week1_planning.md
-│   ├── week2_encryption_algorithms.md
-│   ├── week3_key_management.md
-│   ├── week4_vulnerabilities.md
-│   ├── week5_design.md
-│   ├── week6_basic_script.md
-│   ├── week7_encryption_features.md
-│   ├── week8_usability.md
-│   ├── week9_security_features.md
-│   ├── week10_testing.md
-│   ├── week11_documentation.md
-│   └── week12_final_review.md
+│   ├── 01 Planning.md
+│   ├── 02 Encryption-Algorithms.md
+│   ├── 03 Key-Management.md
+│   ├── 04 Vulnerabilities.md
+│   ├── 05 Design.md
+│   ├── 06 Basic-Script.md
+│   ├── 07 Encryption-Features.md
+│   ├── 08 Usability.md
+│   ├── 09 Security-Features.md
+│   ├── 10 Testing.md
+│   ├── 11 Documentation.md
+│   └── 12 Final-Review.md
 │
 ├── design/
 │   ├── ui_ux.md
