@@ -333,9 +333,70 @@ fi
 <img width="975" height="895" alt="image" src="https://github.com/user-attachments/assets/68390ef2-1158-46f5-8a8c-15d72ff0494f" />
 
 ## Appendix C – Sample Output
-- Encryption success messages  
-- Decryption warnings  
-- Error examples  
+
+This appendix provides real examples of the tool’s output during encryption, decryption, and error handling. These samples demonstrate correct functionality, user feedback, and error messaging.
+
+---
+
+### 1. Encryption Success Message
+```
+Generated encryption key: HfidJ2cpGSxJDOQjHK2Wm4nS1sgBnMjMsk2nhUbAY=
+Keep this key secure! You’ll need it to decrypt the file.
+*** WARNING: deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+File encrypted successfully to 'test_output.txt'.
+Hash stored in 'test_output.txt.hash' for integrity verification.
+```
+
+---
+
+### 2. Decryption Success Message
+```
+File decrypted successfully to 'decrypted.txt'.
+Decryption verified.
+```
+
+
+---
+
+### 3. Decryption Warning (Empty File)
+```
+Warning: Decryption complete, but the file is empty. Verify your encryption key.
+```
+
+---
+
+### 4. Decryption Failure Example
+```
+Error: Decryption failed. Possible reasons:
+- Incorrect encryption key.
+- Corrupted or modified encrypted file.
+= Inconsistent encryption/decryption modes.
+```
+
+---
+
+### 5. Invalid File Path Error
+```
+Error: The file 'missing.txt' does not exist or cannot be read.
+```
+
+---
+
+### 6. Missing Arguments Error
+```
+Error: Missing arguments. Ensure both (-e or -d), input file, and output file are specified.
+Usage: encryption_tool.sh -e|-d -f <input_file> -o <output_file> [-k <key>]
+```
+
+---
+
+### 7. Encrypted File Preview (Binary Output Example)
+```
+Salted__+<z1i8&0_oY y2$#9q7~o(+WgBW|(@e@@@w
+```
+
+---
 
 ## Appendix D – Project Notes Document
 The full weekly project notes, research summaries, and development logs used throughout the 12‑week project are available in the following document:
